@@ -1,0 +1,33 @@
+{
+  "name": "memoria",
+  "version": "1.0.0",
+  "description": "memoria",
+  "author": "eleline",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "generate": "nuxt-ts generate",
+    "start": "nuxt-ts start",
+    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore ."
+  },
+  "browserslist": [
+    "last 2 version"
+  ],
+  "_moduleAliases": {
+    "~/*": "./*",
+    "@/*": "./*"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^0.4.0",
+    "@nuxtjs/axios": "^5.9.5",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.6.0",
+    "@nuxtjs/eslint-config-typescript": "^1.0.2",
+    "@nuxtjs/eslint-module": "^1.1.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2"
+  }
+}
