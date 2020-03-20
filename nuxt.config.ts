@@ -1,4 +1,6 @@
 import { Configuration } from "@nuxt/types";
+const purgecss = require('@fullhuman/postcss-purgecss')
+const autoprefixer = require('autoprefixer')
 
 const config: Configuration = {
   mode: "universal",
@@ -29,7 +31,7 @@ const config: Configuration = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~assets/scss/global.scss'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -49,7 +51,21 @@ const config: Configuration = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {},
+    postcss: {
+      plugins: [
+        autoprefixer({ grid: 'autoplace' }),
+        purgecss({
+          content: [
+            './pages/**/*.vue',
+            './layouts/**/*.vue',
+            './components/**/*.vue',
+          ],
+          whitelist: ['html', 'body'],
+          whitelistPatterns: [/(col|row)/]
+        })
+      ]
+    },
   }
 };
 
