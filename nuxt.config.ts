@@ -1,4 +1,6 @@
 import { Configuration } from "@nuxt/types";
+const purgecss = require("@fullhuman/postcss-purgecss");
+const autoprefixer = require("autoprefixer");
 
 const config: Configuration = {
   mode: "universal",
@@ -7,6 +9,10 @@ const config: Configuration = {
    */
   head: {
     title: process.env.npm_package_name || "",
+    htmlAttrs: {
+      lang: "ja",
+      prefix: "og: http://ogp.me/ns#"
+    },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -25,7 +31,7 @@ const config: Configuration = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ["~assets/sass/global.scss"],
   /*
    ** Plugins to load before mounting the App
    */
@@ -33,11 +39,24 @@ const config: Configuration = {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ["@nuxtjs/eslint-module", "@nuxt/typescript-build"],
+  buildModules: [
+    "@nuxtjs/eslint-module",
+    "@nuxt/typescript-build",
+    "@nuxtjs/tailwindcss"
+  ],
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    "nuxt-purgecss",
+    '@nuxtjs/style-resources'
+  ],
+  /*
+   ** Style modules
+   */
+  styleResources: {
+    scss: ['~/assets/sass/variables.scss']
+  },
   /*
    ** Build configuration
    */
@@ -45,7 +64,21 @@ const config: Configuration = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {},
+    postcss: {
+      plugins: [
+        autoprefixer({ grid: "autoplace" }),
+        purgecss({
+          content: [
+            "./pages/**/*.vue",
+            "./layouts/**/*.vue",
+            "./components/**/*.vue"
+          ],
+          whitelist: ["html", "body"],
+          whitelistPatterns: [/(col|row)/]
+        })
+      ]
+    }
   }
 };
 
