@@ -1,17 +1,18 @@
 # Memoria
-microCMSを利用したサイト
+Sites using microCMS.
+
 ## Usage
-パッケージのインストール
+Packages install
 ```sh
 yarn install
 ```
 
-localhostで開発画面を起動
+Start the development environment on localhost
 ```sh
 yarn dev
 ```
 
-ビルド
+Build
 ```sh
 yarn build
 ```
