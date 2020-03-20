@@ -1,6 +1,8 @@
 <template>
-  <div class="b-container">
-    <h1 class="b-head-1">memoria</h1>
+  <div>
+    <section class="b-container">
+      <h2 class="b-page-title">Under Design</h2>
+    </section>
   </div>
 </template>
 
@@ -11,10 +13,10 @@ import Vue from "vue";
 <style lang="scss">
 .b-container {
   background-color: $white;
-  .b-head-1 {
+  .b-page-title {
     font-size: 40px;
     font-weight: 700;
-    margin: 0 48px;
+    margin: 0 28px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-align: center;
