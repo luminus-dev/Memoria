@@ -7,6 +7,10 @@ const config: Configuration = {
    */
   head: {
     title: process.env.npm_package_name || "",
+    htmlAttrs: {
+      lang: "ja",
+      prefix: "og: http://ogp.me/ns#"
+    },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -33,7 +37,7 @@ const config: Configuration = {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ["@nuxtjs/eslint-module", "@nuxt/typescript-build"],
+  buildModules: ["@nuxtjs/eslint-module", "@nuxt/typescript-build",'@nuxtjs/tailwindcss'],
   /*
    ** Nuxt.js modules
    */
