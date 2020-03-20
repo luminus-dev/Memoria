@@ -2,7 +2,7 @@
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
   "eslint.enable": true,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "eslint.run": "onType",
   "vetur.format.defaultFormatter.js": "prettier",
   "vetur.format.defaultFormatter.css": "prettier",

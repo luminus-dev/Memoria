@@ -5,7 +5,7 @@
   "author": "eleline",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts",
+    "dev": "PORT=3333 nuxt-ts",
     "build": "nuxt-ts build",
     "generate": "nuxt-ts generate",
     "start": "nuxt-ts start",
@@ -28,6 +28,7 @@
     "@nuxt/typescript-build": "^0.6.0",
     "@nuxtjs/eslint-config-typescript": "^1.0.2",
     "@nuxtjs/eslint-module": "^1.1.0",
+    "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/tailwindcss": "^1.4.0",
     "autoprefixer": "^9.7.4",
     "node-sass": "^4.13.1",
