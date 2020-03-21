@@ -17,7 +17,7 @@ export default Vue.extend({});
   padding: 12px 16px;
   align-items: center;
   @include tablet {
-    padding: 12px 48px;
+    padding: 12px 64px;
   }
   .c-main-title {
     font-size: 24px;
