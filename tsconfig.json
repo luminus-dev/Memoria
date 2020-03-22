@@ -1,33 +1,17 @@
 {
   "compilerOptions": {
+    "module": "commonjs",
     "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "lib": [
-      "esnext",
-      "esnext.asynciterable",
-      "dom"
-    ],
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "allowJs": true,
-    "sourceMap": true,
     "strict": true,
-    "noImplicitAny": false,
-    "noEmit": true,
-    "baseUrl": "./",
-    "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./*"]
-    },
-    "typeRoots": ["/src/@types"],
-    "types": [
-      "@types/node",
-      "@nuxt/types",
-      "@nuxtjs/axios"
-    ]
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["dom", "esnext"]
   },
-  "exclude": [
-    "node_modules"
+  "include": [
+    "./types/**/*",
+    "./gatsby-node/**/*",
+    "./src/**/*"
   ]
 }
