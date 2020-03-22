@@ -16,6 +16,7 @@ module.exports = {
         fileName: `types/graphql-types.d.ts`
       }
     },
+    "gatsby-plugin-emotion",
     "gatsby-plugin-postcss",
     `gatsby-plugin-sass`
   ]
