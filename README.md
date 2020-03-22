@@ -2,24 +2,28 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1dbbd86c-0445-4425-af7c-5eb19bf8b5ce/deploy-status)](https://app.netlify.com/sites/memoria-xd/deploys)
 
-Sites using microCMS.
+Memoria
 
 ## Usage
 
-Packages install
+### Packages install
 
 ```sh
 yarn install
 ```
 
-Start the development environment on localhost:3333
+### Start development
 
 ```sh
 yarn dev
 ```
 
-Build
+### Build
 
 ```sh
 yarn build
 ```
+
+### Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/eleline/Memoria)
