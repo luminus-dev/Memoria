@@ -8,7 +8,6 @@ module.exports = {
     ]
   },
   plugins: [
-    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
     {
@@ -16,6 +15,8 @@ module.exports = {
       options: {
         fileName: `types/graphql-types.d.ts`
       }
-    }
+    },
+    "gatsby-plugin-postcss",
+    `gatsby-plugin-sass`
   ]
 }
