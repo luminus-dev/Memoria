@@ -1,35 +1,28 @@
 import * as React from "react"
-import { Link } from "gatsby"
-// ______________________________________________________
-//
-const Component: React.FC = () => (
-  <div
-    style={{
-      background: "rebeccapurple",
-      marginBottom: "1.45rem"
-    }}
-  >
-    <div
-      style={{
-        margin: "0 auto",
-        maxWidth: 960,
-        padding: "1.45rem 1.0875rem"
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: "white",
-            textDecoration: "none"
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
-    </div>
-  </div>
+import { css } from "@emotion/core"
+import { media } from "../styles/variables"
+
+const header = css`
+  display: flex;
+  width: 100%;
+  margin: 0 auto 64px;
+  padding: 12px 16px;
+  align-items: center;
+  ${media.tablet} {
+    padding: 12px 64px;
+  }
+`
+const mainTitle = css`
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+`
+
+const Header: React.FC = () => (
+  <header css={header}>
+    <h1 css={mainTitle}>Memoria</h1>
+  </header>
 )
-// ______________________________________________________
-//
-export default Component
+
+export default Header
