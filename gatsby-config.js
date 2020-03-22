@@ -1,17 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Typescript Starter`,
+    title: `Memoria`,
     authors: [
-      { name: 'Tori', slug: 'tori' },
-      { name: 'Neko', slug: 'neko' },
-      { name: 'Inu', slug: 'inu' }
+      { name: "Tori", slug: "tori" },
+      { name: "Neko", slug: "neko" },
+      { name: "Inu", slug: "inu" }
     ]
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
     {
-      resolve: 'gatsby-plugin-graphql-codegen',
+      resolve: "gatsby-plugin-graphql-codegen",
       options: {
         fileName: `types/graphql-types.d.ts`
       }
