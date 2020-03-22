@@ -10,7 +10,7 @@ Packages install
 yarn install
 ```
 
-Start the development environment on localhost
+Start the development environment on localhost:3333
 
 ```sh
 yarn dev
