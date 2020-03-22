@@ -39,7 +39,9 @@
     "typescript": "^3.7.2"
   },
   "devDependencies": {
+    "gatsby-plugin-purgecss": "^4.0.1",
     "node-sass": "^4.13.1",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "purgecss": "^2.1.0"
   }
 }

@@ -531,6 +531,10 @@ export type SitePageFieldsEnum =
   'pluginCreator___name' |
   'pluginCreator___version' |
   'pluginCreator___pluginOptions___fileName' |
+  'pluginCreator___pluginOptions___content' |
+  'pluginCreator___pluginOptions___develop' |
+  'pluginCreator___pluginOptions___tailwind' |
+  'pluginCreator___pluginOptions___whitelist' |
   'pluginCreator___pluginOptions___path' |
   'pluginCreator___pluginOptions___pathCheck' |
   'pluginCreator___nodeAPIs' |
@@ -718,6 +722,10 @@ export type SitePluginFieldsEnum =
   'name' |
   'version' |
   'pluginOptions___fileName' |
+  'pluginOptions___content' |
+  'pluginOptions___develop' |
+  'pluginOptions___tailwind' |
+  'pluginOptions___whitelist' |
   'pluginOptions___path' |
   'pluginOptions___pathCheck' |
   'nodeAPIs' |
@@ -834,12 +842,20 @@ export type SitePluginPackageJsonPeerDependenciesFilterListInput = {
 
 export type SitePluginPluginOptions = {
   fileName?: Maybe<Scalars['String']>,
+  content?: Maybe<Array<Maybe<Scalars['String']>>>,
+  develop?: Maybe<Scalars['Boolean']>,
+  tailwind?: Maybe<Scalars['Boolean']>,
+  whitelist?: Maybe<Array<Maybe<Scalars['String']>>>,
   path?: Maybe<Scalars['String']>,
   pathCheck?: Maybe<Scalars['Boolean']>,
 };
 
 export type SitePluginPluginOptionsFilterInput = {
   fileName?: Maybe<StringQueryOperatorInput>,
+  content?: Maybe<StringQueryOperatorInput>,
+  develop?: Maybe<BooleanQueryOperatorInput>,
+  tailwind?: Maybe<BooleanQueryOperatorInput>,
+  whitelist?: Maybe<StringQueryOperatorInput>,
   path?: Maybe<StringQueryOperatorInput>,
   pathCheck?: Maybe<BooleanQueryOperatorInput>,
 };

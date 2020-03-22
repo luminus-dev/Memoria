@@ -1,3 +1,5 @@
+const path = require("path")
+
 module.exports = {
   siteMetadata: {
     title: `Memoria`,
@@ -18,6 +20,17 @@ module.exports = {
     },
     "gatsby-plugin-emotion",
     "gatsby-plugin-postcss",
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    {
+      resolve: "gatsby-plugin-purgecss",
+      options: {
+        content: [
+          path.join(process.cwd(), "src/**/!(*.d).{js,jsx,ts,tsx,md,mdx}")
+        ],
+        develop: false,
+        tailwind: true,
+        whitelist: ["emoji"]
+      }
+    }
   ]
 }
