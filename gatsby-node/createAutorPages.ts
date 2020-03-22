@@ -26,9 +26,12 @@ const query = `
 `
 // ______________________________________________________
 //
-export const createAutorPages = async ({ graphql, createPage }: {
-  graphql: CreatePagesArgs['graphql'],
-  createPage: Actions['createPage']
+export const createAutorPages = async ({
+  graphql,
+  createPage
+}: {
+  graphql: CreatePagesArgs["graphql"]
+  createPage: Actions["createPage"]
 }) => {
   const result = await graphql<Result>(query)
   if (result.errors || !result.data) {
