@@ -1,37 +1,32 @@
 {
   "name": "memoria",
-  "version": "1.0.0",
   "description": "memoria",
-  "author": "eleline",
+  "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "dev": "PORT=3333 nuxt-ts",
-    "build": "nuxt-ts build",
-    "generate": "nuxt-ts generate",
-    "start": "nuxt-ts start",
-    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore ."
-  },
-  "browserslist": [
-    "last 2 version"
+  "keywords": [
+    "gatsby, typescript"
   ],
-  "_moduleAliases": {
-    "~/*": "./*",
-    "@/*": "./*"
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop -p 3333",
+    "format": "prettier --write \"src/**/*.ts*\" \"types/**/*.ts*\" \"gatsby-node/**/*.ts*\""
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "^0.4.0",
-    "@nuxtjs/axios": "^5.9.5",
-    "nuxt": "^2.0.0"
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "@types/node": "^12.12.7",
+    "@types/react-helmet": "^5.0.14",
+    "gatsby": "^2.17.11",
+    "gatsby-plugin-graphql-codegen": "^2.0.1",
+    "gatsby-plugin-react-helmet": "^3.1.14",
+    "gatsby-plugin-typescript": "^2.1.16",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-helmet": "^5.2.1",
+    "ts-node": "^8.5.0",
+    "typescript": "^3.7.2"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.1.0",
-    "@nuxt/typescript-build": "^0.6.0",
-    "@nuxtjs/eslint-config-typescript": "^1.0.2",
-    "@nuxtjs/eslint-module": "^1.1.0",
-    "@nuxtjs/style-resources": "^1.0.0",
-    "@nuxtjs/tailwindcss": "^1.4.0",
-    "autoprefixer": "^9.7.4",
-    "node-sass": "^4.13.1",
-    "sass-loader": "^8.0.2"
+    "prettier": "^1.19.1"
   }
 }
