@@ -1,6 +1,6 @@
 {
   "name": "memoria",
-  "description": "memoria",
+  "description": "Memoria",
   "version": "1.0.0",
   "private": true,
   "keywords": [
@@ -11,6 +11,10 @@
     "build": "gatsby build",
     "dev": "gatsby develop -p 3333",
     "format": "prettier --write \"src/**/*.ts*\" \"types/**/*.ts*\" \"gatsby-node/**/*.ts*\""
+  },
+  "_moduleAliases": {
+    "~/*": "./*",
+    "@/*": "./*"
   },
   "dependencies": {
     "@babel/plugin-proposal-optional-chaining": "^7.6.0",
