@@ -31,13 +31,14 @@ dd {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 2000vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.8;
   background-color: #fff;
   font-family: "Helvetica Neue", "Avenir Next", Arial,
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  overflow-x: hidden;
 }
 
 ul[class],

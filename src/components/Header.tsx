@@ -1,6 +1,8 @@
 import * as React from "react"
+import { motion } from "framer-motion"
+import { Link } from "gatsby"
 import { css } from "@emotion/core"
-import { media } from "../styles/variables"
+import { colors, media } from "../styles/variables"
 
 const header = css`
   display: flex;
@@ -12,16 +14,23 @@ const header = css`
     padding: 12px 64px;
   }
 `
-const mainTitle = css`
+const Logo = css`
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 `
+const LogoLink = css`
+  color: ${colors.black};
+`
 
 const Header: React.FC = () => (
   <header css={header}>
-    <h1 css={mainTitle}>Memoria</h1>
+    <motion.h1 css={Logo} whileTap={{ scale: 0.9 }}>
+      <Link to="/" css={LogoLink}>
+        Memoria
+      </Link>
+    </motion.h1>
   </header>
 )
 
