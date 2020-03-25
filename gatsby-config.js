@@ -18,6 +18,14 @@ module.exports = {
         fileName: `types/graphql-types.d.ts`
       }
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Arimo:700"]
+        }
+      }
+    },
     "gatsby-plugin-emotion",
     "gatsby-plugin-postcss",
     `gatsby-plugin-sass`,

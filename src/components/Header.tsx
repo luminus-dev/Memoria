@@ -2,7 +2,7 @@ import * as React from "react"
 import { motion } from "framer-motion"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
-import { colors, media } from "../styles/variables"
+import { colors, fontFamily, media } from "../styles/variables"
 
 const header = css`
   display: flex;
@@ -17,6 +17,7 @@ const header = css`
 const Logo = css`
   font-size: 24px;
   font-weight: 700;
+  font-family: ${fontFamily.catch};
   letter-spacing: 0.05em;
   text-transform: uppercase;
 `

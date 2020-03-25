@@ -1,7 +1,7 @@
 import * as React from "react"
 import { motion, useViewportScroll } from "framer-motion"
 import { css } from "@emotion/core"
-import { media } from "../styles/variables"
+import { fontFamily, media } from "../styles/variables"
 
 const CatchSection = css`
   display: flex;
@@ -21,7 +21,7 @@ const CatchTitle = css`
   text-transform: uppercase;
   text-align: center;
   line-height: 1.15;
-  font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+  font-family: ${fontFamily.catch};
   ${media.tablet} {
     font-size: 96px;
   }
@@ -68,7 +68,7 @@ const CatchHero: React.FC = () => {
           Under Design
         </motion.h2>
         <div css={CatchDescription}>
-          フロントエンドエンジニアとしてやるべきことを果たすために、いろんな知識や概念を知り成長していく記憶をここに残す
+          フロントエンドエンジニアとしてやるべきことを果たすために、多様な知識や概念を知り成長していく記憶をここに残す
         </div>
       </section>
     </>
