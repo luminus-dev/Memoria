@@ -1,4 +1,5 @@
 import * as React from "react"
+import { motion, useViewportScroll } from "framer-motion"
 import { css } from "@emotion/core"
 import { media } from "../styles/variables"
 
@@ -47,21 +48,31 @@ const CatchDescription = css`
   }
 `
 
-const CatchHero: React.FC = () => (
-  <>
-    <section css={CatchSection}>
-      <h2 css={CatchTitle}>Under Design</h2>
-      <div css={CatchDescription}>
-        目先のことばかりを気にして考える時間はここまで
-        <br />
-        これより先は視野を広め、壁を見上げながらよじ登ろうじゃないか
-        <br />
-        クリエイティブな思考や面白い概念を知識として積み上げる
-        <br />
-        さぁ、誇りある自分と共に前を向いて走れ！
-      </div>
-    </section>
-  </>
-)
+const CatchHero: React.FC = () => {
+  const { scrollYProgress } = useViewportScroll()
+  console.log(scrollYProgress)
+
+  return (
+    <>
+      <section css={CatchSection}>
+        <motion.h2
+          css={CatchTitle}
+          drag
+          dragConstraints={{
+            top: -50,
+            left: -50,
+            right: 50,
+            bottom: 50
+          }}
+        >
+          Under Design
+        </motion.h2>
+        <div css={CatchDescription}>
+          デザイナー・フロントエンドエンジニア。タイポグラフィを軸とした使い心地の良さを追求するデザインと、拡張性の高いコーディングの両立を強みとして、最適と考えるユーザー体験を設計します。
+        </div>
+      </section>
+    </>
+  )
+}
 
 export default CatchHero
