@@ -21,7 +21,7 @@ const CatchTitle = css`
   text-transform: uppercase;
   text-align: center;
   line-height: 1.15;
-  font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", Helvetica, "Arimo", Arial, sans-serif;
   ${media.tablet} {
     font-size: 96px;
   }

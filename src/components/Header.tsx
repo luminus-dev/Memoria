@@ -17,6 +17,7 @@ const header = css`
 const Logo = css`
   font-size: 24px;
   font-weight: 700;
+  font-family: "Avenir Next", Helvetica, "Nunito Sans", Arial, sans-serif;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 `
