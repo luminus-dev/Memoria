@@ -66,7 +66,9 @@ const BlogSection: React.FC = () => {
               <section>
                 <img src="/images/momoria-thum.png" alt="サムネイル" />
                 <h3 css={articleTitle}>ブログタイトル{index}</h3>
-                <p css={articleDescription}>説明をする。説明をする。</p>
+                <p css={articleDescription}>
+                  3行くらいになるよ、たぶんね。コロナには気をつけよう。手洗いうがいは勿論、体の免疫を下げないように適度な運動を！
+                </p>
                 <p>2020-XX-XX</p>
                 <p>タグ / タグ</p>
               </section>

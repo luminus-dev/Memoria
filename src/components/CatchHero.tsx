@@ -34,9 +34,10 @@ const CatchTitle = css`
 `
 const CatchDescription = css`
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.05em;
+  line-height: 2;
   ${media.tablet} {
     font-size: 16px;
   }
