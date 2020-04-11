@@ -65,7 +65,7 @@ const CatchHero: React.FC = () => {
             bottom: 50
           }}
         >
-          Under Design
+          UNDER DESIGN
         </motion.h2>
         <div css={CatchDescription}>
           フロントエンドエンジニアとしてやるべきことを果たすために、多様な知識や概念を知り成長していく記憶をここに残す
