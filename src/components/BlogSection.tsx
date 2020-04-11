@@ -32,6 +32,9 @@ const articles = css`
   grid-gap: 48px;
   list-style: none;
   ${media.tablet} {
+    --column-count: 2;
+  }
+  ${media.desktop} {
     --column-count: 3;
   }
 `
