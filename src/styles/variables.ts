@@ -21,8 +21,8 @@ export const colors = {
 // font-family
 export const fontFamily = {
   catch: `"Avenir Next", Helvetica, "Arimo", Arial, sans-serif`,
-  main: `"Helvetica", "Avenir Next", Arial,
-  "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif`
+  main: `"Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+  Meiryo, sans-serif`
 }
 
 // Shadow

@@ -22,7 +22,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Arimo:700"]
+          families: ["Arimo:700", "Noto+Sans+JP:400,700"]
         }
       }
     },
