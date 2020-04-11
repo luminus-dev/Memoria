@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import { IndexHogeQuery } from "../../types/graphql-types"
 import Header from "../components/Header"
 import CatchHero from "../components/CatchHero"
-import WorksSection from "../components/Works"
+import BlogSection from "../components/BlogSection"
 // ______________________________________________________
 //
 type Props = {
@@ -15,7 +15,7 @@ const Component: React.FC<Props> = ({ data }) => (
   <>
     <Header />
     <CatchHero />
-    <WorksSection />
+    <BlogSection />
   </>
 )
 // ______________________________________________________
