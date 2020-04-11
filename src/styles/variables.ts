@@ -14,7 +14,8 @@ export const colors = {
   },
   white: "#FFF",
   black: "#000",
-  cLink: "#006ca8"
+  cLink: "#006ca8",
+  accent: "#c13149"
 }
 
 // font-family

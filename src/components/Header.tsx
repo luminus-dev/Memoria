@@ -7,8 +7,8 @@ import { colors, fontFamily, media } from "../styles/variables"
 const header = css`
   display: flex;
   width: 100%;
-  margin: 0 auto 82px;
-  padding: 12px 16px;
+  margin: 0 auto 96px;
+  padding: 16px 32px;
   align-items: center;
   ${media.tablet} {
     padding: 12px 64px;

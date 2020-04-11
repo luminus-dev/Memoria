@@ -4,8 +4,8 @@ import { colors, fontFamily, media } from "../styles/variables"
 
 const section = css`
   width: 100%;
-  margin: 128px auto 82px;
-  padding: 0 16px;
+  margin: 96px auto;
+  padding: 0 32px;
   ${media.tablet} {
     padding: 0 64px;
   }
@@ -20,7 +20,7 @@ const sectionTitle = css`
   font-family: ${fontFamily.catch};
   ${media.desktop} {
     font-size: 64px;
-    margin-bottom: 36px;
+    margin-bottom: 32px;
     letter-spacing: 0.072em;
   }
 `
@@ -43,11 +43,12 @@ const articleCard = css`
 `
 const articleTitle = css`
   font-size: 24px;
-  margin: 8px 0 2px 0;
+  margin: 16px 0 8px 0;
   line-height: 1.5;
 `
 const articleDescription = css`
   font-size: 16px;
+  margin-bottom: 8px;
   line-height: 1.75;
   font-weight: 700;
 `
