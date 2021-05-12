@@ -31,7 +31,7 @@
     "gatsby-plugin-sass": "^2.8.0",
     "gatsby-plugin-typescript": "^2.12.1",
     "gatsby-plugin-web-font-loader": "^1.0.4",
-    "postcss": "^7.0.35",
+    "postcss": "^8.2.10",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^5.2.1",
